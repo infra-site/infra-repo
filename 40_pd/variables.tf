@@ -31,3 +31,7 @@ variable "service_integration_name" {
   description = "The name of the service integration (Datadog or Cloudwatch). This will be used in 'pagerduty_vendor'."
   default     = "Amazon CloudWatch"
 }
+
+variable "pd_token" {
+  type    = string
+}
