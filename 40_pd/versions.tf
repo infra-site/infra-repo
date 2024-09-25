@@ -10,7 +10,7 @@ terraform {
 # provider setting
 ## "Pagerduty_Token"
 provider "pagerduty" {
-  token = "u+eLUrDenQ3uAiGeYqeg"
+  token = "${var.token}
 }
 module "pagerduty_service" {
   #source            = "git@github.com:hazelops/terraform-pagerduty-service.git"
